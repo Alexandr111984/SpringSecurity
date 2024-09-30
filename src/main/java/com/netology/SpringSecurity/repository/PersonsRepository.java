@@ -13,8 +13,8 @@ import java.util.Optional;
 
 public interface PersonsRepository extends JpaRepository<Persons, Integer> {
 
-    @Query("select p from Persons p where p.city_of_living = :city_of_living")
-    List<Persons> findByCity_of_living(@Param("city_of_living") String city_of_living);
+    @Query("select p from Persons p where p.cityOfLiving = :cityOfLiving")
+    List<Persons> findByCityOfLiving(@Param("city_of_living") String cityOfLiving);
 
 
     @Query("select p from Persons p where p.name = :name and p.surname = :surname")

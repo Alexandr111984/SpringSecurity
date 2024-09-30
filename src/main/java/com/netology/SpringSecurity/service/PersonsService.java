@@ -9,7 +9,7 @@ import java.util.Optional;
 public interface PersonsService {
 
 
-    List<Persons> getByCity_of_living(String city_of_living);
+    List<Persons> getByCityOfLiving(String cityOfLiving);
 
     List<Persons> getByAgeLessThan(int age);
 

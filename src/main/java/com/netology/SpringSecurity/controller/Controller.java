@@ -19,13 +19,11 @@ public class Controller {
         this.personsService = personsService;
     }
 
-//    @GetMapping("hi")
-//    public String hi(){return "/hi";}
 
     @GetMapping("/persons/by-city_of_living")
-    public List<Persons> getPersons(@RequestParam("city_of_living") String city_of_living) {
+    public List<Persons> getPersons(@RequestParam("city_of_living") String cityOfLiving) {
 
-        return personsService.getByCity_of_living(city_of_living);
+        return personsService.getByCityOfLiving(cityOfLiving);
     }
 
     @GetMapping("/persons/by-age")

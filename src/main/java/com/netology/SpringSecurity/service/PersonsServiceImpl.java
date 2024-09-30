@@ -18,9 +18,9 @@ public class PersonsServiceImpl implements PersonsService {
 
 
     @Override
-    public List<Persons> getByCity_of_living(String city_of_living) {
+    public List<Persons> getByCityOfLiving(String cityOfLiving) {
 
-        return personsRepository.findByCity_of_living(city_of_living);
+        return personsRepository.findByCityOfLiving(cityOfLiving);
     }
 
     @Override

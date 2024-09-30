@@ -20,7 +20,7 @@ public class Persons {
     private Integer id;
 
     @Column(name = "city_of_living")
-    private String city_of_living;
+    private String cityOfLiving;
 
     @Column(name = "phone_number")
     private String phone_number;
@@ -41,7 +41,7 @@ public class Persons {
         return "Persons{" +
                 "age=" + age +
                 ", id=" + id +
-                ", city_of_living='" + city_of_living + '\'' +
+                ", city_of_living='" + cityOfLiving + '\'' +
                 ", phone_number='" + phone_number + '\'' +
                 ", surname=" + surname +
                 ", name=" + name +
